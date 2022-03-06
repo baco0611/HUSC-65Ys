@@ -1,0 +1,84 @@
+.content{
+    position: absolute;
+    top: 175px;
+    left: 175px;
+    &-heading{
+        width: 545px;
+        color: #FF7B52;
+        font-size: 58px;
+        line-height: 80px;
+    }
+    &-sub-heading{
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 45px 0;
+        text-transform: uppercase;
+    }
+    &-btn{
+        padding: 15px 25px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        width: 165px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo{
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    &-front{
+        position: absolute;
+        top: 0;
+        @include size(400px);
+        background: #143980;
+        display: flex;
+        align-items: center;
+        transform: rotate(15deg);
+        border-radius: 75px;
+        z-index: 3;
+        &-img{
+            width: 65%;
+            margin: auto auto;
+        }
+    }
+    &-back{
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        @include size(400px); 
+        border-radius: 75px;
+        background-color: $sub-primary-color;
+        transform: rotate(15deg);
+    }
+    &-back1{
+        position: absolute;
+        top: 335px;
+        left: -375px;
+        @include size(70px);
+        border-radius: 15px;
+        background-color: $third-primary-color;
+        transform: rotate(15deg);
+    }
+    &-back2{
+        position: absolute;
+        top: 275px;
+        left: -250px;
+        @include size(35px);
+        border-radius: 10px;
+        background-color: $third-primary-color;
+        transform: rotate(15deg);
+    }
+    &-back3{
+        position: absolute;
+        top: 125px;
+        left: -125px;
+        @include size(70px);
+        border-radius: 15px;
+        background-color: #FF7B52;
+        transform: rotate(15deg);
+    }
+}

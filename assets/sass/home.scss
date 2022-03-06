@@ -1,0 +1,7 @@
+.home{
+    background-color: $primary-color;
+    position: relative;
+}
+
+@import "./header.scss";
+@import "./home-content.scss";
