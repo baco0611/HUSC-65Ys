@@ -1,0 +1,303 @@
+.student{
+    background-color: white;
+    &-line{
+        width: 30%;
+        height: 14px;
+        background-color: $sub-primary-color;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    &-heading{
+        color: $primary-color;
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+    }
+    &-sub-heading{
+        color: $sub-primary-color;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &-content{
+        position: relative;
+        &-text{
+            -webkit-text-stroke: 2px $primary-color;
+            font-size: 80px;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        &-back{
+            content: " ";
+            width: 600px;
+            height: 400px;
+            background-color: $primary-color;
+            position: absolute;
+            top: calc((100% - 500px)/2);
+            left: calc((100% - 600px)/2);
+            &-top{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding-top: 25px;
+                padding-left: 25px;
+                &-img{
+                    height: 55px;
+                }
+                &-text{
+                    padding-left: 15px;
+                    border-left: 2px solid white;
+                    &-1{
+                        font-weight: 550;
+                        color: white;
+                        font-size: 14px;
+                    } 
+                    &-2{
+                        font-weight: 550;
+                        color: white;
+                        font-size: 18px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+            &-bottom{
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                gap: 30px;
+                margin-top: 40px;
+                &-left{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-img{
+                        content: " ";
+                        width: 150px;
+                        height: 200px;
+                        border: white 1px solid;
+                        margin: 0 auto;
+                        margin-bottom: 15px;
+                    }
+                    &-msv{
+                        position: relative;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                        &-input{
+                            border: 1px solid rgba(255, 255, 255, 0.192);
+                            border-radius: 5px;
+                            height: 30px;
+                            width: 100%;
+                            padding: 0 5%;
+                            background: none;
+                            transition: .25s ease;
+                            color: white;
+                            font-family: $font;
+                            text-align: center;
+                            &:focus{
+                                border-color: white;
+                            }
+                        }
+                        &-label{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: calc(5% + 20px);
+                            font-size: 10px;
+                            color: rgba(255, 255, 255, 0.192);
+                            pointer-events: none;
+                            transition: .25s ease;
+                        }
+                    }
+                }
+                &-right{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    &-heading{
+                        width: 100%;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 35px;
+                        text-align: center;
+                        padding-bottom: 2px;
+                    }
+                    &-name{
+                        position: relative;
+                        &-input{
+                            border: 1px solid rgba(255, 255, 255, 0.192);
+                            border-radius: 5px;
+                            height: 40px;
+                            width: 100%;
+                            padding: 0 5%;
+                            background: none;
+                            transition: .25s ease;
+                            color: white;
+                            font-size: 16px;
+                            font-family: $font;
+                            font-weight: 550;
+                            text-transform: uppercase;
+                            &:focus{
+                                border-color: white;
+                            }
+                        }
+                        &-label{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5%;
+                            font-size: 10px;
+                            color: rgba(255, 255, 255, 0.192);
+                            pointer-events: none;
+                            transition: .25s ease;
+                        }
+                    }
+                    &-date{
+                        position: relative;
+                        &-input{
+                            border: 1px solid rgba(255, 255, 255, 0.192);
+                            border-radius: 5px;
+                            height: 30px;
+                            width: 100%;
+                            padding: 0 5%;
+                            background: none;
+                            transition: .25s ease;
+                            color: white;
+                            font-family: $font;
+                            &:focus{
+                                border-color: white;
+                            }
+                        }
+                        &-label{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5%;
+                            font-size: 10px;
+                            color: rgba(255, 255, 255, 0.192);
+                            pointer-events: none;
+                            transition: .25s ease;
+                        }
+                    }
+                    &-class{
+                        position: relative;
+                        &-input{
+                            border: 1px solid rgba(255, 255, 255, 0.192);
+                            border-radius: 5px;
+                            height: 30px;
+                            width: 100%;
+                            padding: 0 5%;
+                            background: none;
+                            transition: .25s ease;
+                            color: white;
+                            font-family: $font;
+                            &:focus{
+                                border-color: white;
+                            }
+                        }
+                        &-label{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5%;
+                            font-size: 10px;
+                            color: rgba(255, 255, 255, 0.192);
+                            pointer-events: none;
+                            transition: .25s ease;
+                        }
+                    }
+                    &-year{
+                        position: relative;
+                        &-input{
+                            border: 1px solid rgba(255, 255, 255, 0.192);
+                            border-radius: 5px;
+                            height: 30px;
+                            width: 100%;
+                            padding: 0 5%;
+                            background: none;
+                            transition: .25s ease;
+                            color: white;
+                            font-family: $font;
+                            &:focus{
+                                border-color: white;
+                            }
+                        }
+                        &-label{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 5%;
+                            font-size: 10px;
+                            color: rgba(255, 255, 255, 0.192);
+                            pointer-events: none;
+                            transition: .25s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-footer-img{
+        width: 100%;
+    }
+}
+.student-content-back-bottom-left-msv-input:not(:placeholder-shown) 
++.student-content-back-bottom-left-msv-label,
+.student-content-back-bottom-left-msv-input:focus 
++ .student-content-back-bottom-left-msv-label{
+    color: white;
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: $primary-color;
+}
+
+.student-content-back-bottom-right-name-input:not(:placeholder-shown) 
++.student-content-back-bottom-right-name-label,
+.student-content-back-bottom-right-name-input:focus 
++ .student-content-back-bottom-right-name-label{
+    color: white;
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: $primary-color;
+}
+
+.student-content-back-bottom-right-date-input:not(:placeholder-shown) 
++.student-content-back-bottom-right-date-label,
+.student-content-back-bottom-right-date-input:focus 
++ .student-content-back-bottom-right-date-label{
+    color: white;
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: $primary-color;
+}
+
+.student-content-back-bottom-right-class-input:not(:placeholder-shown) 
++.student-content-back-bottom-right-class-label,
+.student-content-back-bottom-right-class-input:focus 
++ .student-content-back-bottom-right-class-label{
+    color: white;
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: $primary-color;
+}
+
+.student-content-back-bottom-right-year-input:not(:placeholder-shown) 
++.student-content-back-bottom-right-year-label,
+.student-content-back-bottom-right-year-input:focus 
++ .student-content-back-bottom-right-year-label{
+    color: white;
+    top: 0;
+    font-size: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: $primary-color;
+}

@@ -14,30 +14,36 @@
     </head>
     <body>
         <!-- Home -->
-        <div class="home">
+        <div id="home-section" class="home">
             <img src="./assets/img/Home/Home_back.png" alt="" class="home-back">
             <!-- Header -->
             <div class="header">
                 <div class="header-container">
-                    <h3 class="header-container-heading">65 YEARS</h3>
+                    <div class="header-container-logo">
+                        <img src="./assets/img/Home/logo_husc.png" alt="" class="header-container-logo-img">
+                        <div>
+                            <h3 class="header-container-logo-heading">65 YEARS</h3>
+                            <h4 class="header-container-logo-sub">ANNIVERSARY</h4>
+                        </div>
+                    </div>
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="#" class="menu-item-link">Home</a>
+                            <a href="#home-section" class="menu-item-link">Home</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-item-link">Ngành đào tạo</a>
+                            <a href="#course-section" class="menu-item-link">Ngành đào tạo</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-item-link">Sinh viên</a>
+                            <a href="#student-section" class="menu-item-link">Sinh viên</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-item-link">Cơ sở vật chất</a>
+                            <a href="#csvc-section" class="menu-item-link">Cơ sở vật chất</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-item-link">Liên lạc</a>
+                            <a href="#contact-section" class="menu-item-link">Liên lạc</a>
                         </li>
                     </ul>
-                    <div class="header-container-btn">Join us</div>
+                    <a href="#course-section" class="header-container-btn">Join us</a>
                 </div>
             </div>
 
@@ -46,10 +52,10 @@
                 <div class="content-container">
                     <h1 class="content-heading">HUE UNIVERSITY OF SCIENCE</h1>
                     <h2 class="content-sub-heading">Mừng 65 năm kỉ niệm thành lập trường</h2>
-                    <div class="content-btn">
+                    <a href="#course-section" class="content-btn">
                         Khám phá
                         <i class="ti-arrow-right"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -79,7 +85,7 @@
                 </div>
                 <div class="information-box">
                     <img src="./assets/img/Home/information_3.png" alt="" class="information-box-img">
-                    <h3 class="information-box-heading">8 Khu phòng học</h3>
+                    <h3 class="information-box-heading">10 Khu phòng học</h3>
                     <div class="information-box-line"></div>
                     <p class="information-box-text">Đảm bảo đầy đủ cơ sở vật chất với phòng học thoáng mát và phòng thí nghiệm hiện đại.</p>
                 </div>
@@ -87,22 +93,72 @@
         </div>
 
         <!-- Course -->
-        <div id="course">
+        <div id="course-section" class="course">
 
         </div>
 
         <!-- Student -->
-        <div id="student">
-
+        <div id="student-section" class="student">
+            <div class="student-line"></div>
+            <h1 class="student-heading">SINH VIÊN</h1>
+            <h1 class="student-sub-heading">Let's try to become a HUSC student</h1>
+            <div class="student-content">
+                <h1 class="student-content-text">65 NĂM 65 NĂM 65 NĂM</h1>
+                <h1 class="student-content-text">65 NĂM 65 NĂM 65 NĂM</h1>
+                <h1 class="student-content-text">65 NĂM 65 NĂM 65 NĂM</h1>
+                <div class="student-content-back">
+                    <div class="student-content-back-top">
+                        <img src="./assets/img/Home/logo_husc.png" alt="" class="student-content-back-top-img">
+                        <div class="student-content-back-top-text">
+                            <h1 class="student-content-back-top-text-1">ĐẠI HỌC HUẾ</h1>
+                            <h1 class="student-content-back-top-text-2">TRƯỜNG ĐẠI HỌC KHOA HỌC</h1>
+                        </div>
+                    </div>
+                    <div class="student-content-back-bottom">
+                        <div class="student-content-back-bottom-left">
+                            <div class="student-content-back-bottom-left-img">
+                                
+                            </div>
+                            <div class="student-content-back-bottom-left-msv">
+                                <input type="text" class="student-content-back-bottom-left-msv-input" placeholder=" ">
+                                <label for="name" class="student-content-back-bottom-left-msv-label">MSV</label>
+                            </div>
+                        </div>
+                        <div class="student-content-back-bottom-right">
+                            <h1 class="student-content-back-bottom-right-heading">THẺ SINH VIÊN</h1>
+                            <div class="student-content-back-bottom-right-name">
+                                <input type="text" class="student-content-back-bottom-right-name-input" placeholder=" ">
+                                <label for="name" class="student-content-back-bottom-right-name-label">Họ và tên</label>
+                            </div>
+                            <div class="student-content-back-bottom-right-date">
+                                <input type="text" class="student-content-back-bottom-right-date-input" placeholder=" ">
+                                <label for="name" class="student-content-back-bottom-right-date-label">Ngày sinh</label>
+                            </div>
+                            <div class="student-content-back-bottom-right-class">
+                                <input type="text" class="student-content-back-bottom-right-class-input" placeholder=" ">
+                                <label for="name" class="student-content-back-bottom-right-class-label">Lớp</label>
+                            </div>
+                            <div class="student-content-back-bottom-right-year">
+                                <input type="text" class="student-content-back-bottom-right-year-input" placeholder=" ">
+                                <label for="name" class="student-content-back-bottom-right-year-label">Khóa học</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="student-footer">
+                <img src="./assets/img/Student/Footer.png" alt="" class="student-footer-img">
+            </div>
         </div>
 
         <!-- CSVC -->
-        <div id="csvc">
+        <div id="csvc-section" class="csvc">
 
         </div>
 
         <!-- Contact -->
-        <div id="contact">
+        <div id="contact-section" class="contact">
             
         </div>
     </body>
