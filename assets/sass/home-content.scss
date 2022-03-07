@@ -82,3 +82,38 @@
         transform: rotate(15deg);
     }
 }
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 40px;
+    padding: 0 175px;
+    &-box{
+        width: cacl(100%/3);
+        padding: 35px 40px;
+        background-color: white;
+        &-img{
+            height: 72px;
+        }
+        &-heading{
+            color: $primary-color;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        &-line{
+            width: 50%;
+            height: 2px;
+            background-color: $sub-primary-color;
+            margin: 20px 0;
+        }
+        &-text{
+            color: $primary-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+}
