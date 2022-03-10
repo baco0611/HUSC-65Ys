@@ -326,9 +326,36 @@ body {
   content: " ";
   width: 150px;
   height: 200px;
-  border: white 1px solid;
+  border: rgba(255, 255, 255, 0.192) 1px dashed;
+  border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.192);
+  cursor: pointer;
+}
+.student-content-back-bottom-left-img-over {
+  border: rgba(255, 255, 255, 0.192) 1px solid;
+}
+.student-content-back-bottom-left-img__prompt {
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+}
+.student-content-back-bottom-left-img__input {
+  display: none;
+}
+.student-content-back-bottom-left-img__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.192);
+  background-size: cover;
+  position: relative;
 }
 .student-content-back-bottom-left-msv {
   position: relative;
@@ -403,10 +430,10 @@ body {
   pointer-events: none;
   transition: 0.25s ease;
 }
-.student-content-back-bottom-right-date {
+.student-content-back-bottom-right-infor {
   position: relative;
 }
-.student-content-back-bottom-right-date-input {
+.student-content-back-bottom-right-infor-input {
   border: 1px solid rgba(255, 255, 255, 0.192);
   border-radius: 5px;
   height: 30px;
@@ -417,64 +444,10 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-.student-content-back-bottom-right-date-input:focus {
+.student-content-back-bottom-right-infor-input:focus {
   border-color: white;
 }
-.student-content-back-bottom-right-date-label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.192);
-  pointer-events: none;
-  transition: 0.25s ease;
-}
-.student-content-back-bottom-right-class {
-  position: relative;
-}
-.student-content-back-bottom-right-class-input {
-  border: 1px solid rgba(255, 255, 255, 0.192);
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  padding: 0 5%;
-  background: none;
-  transition: 0.25s ease;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-.student-content-back-bottom-right-class-input:focus {
-  border-color: white;
-}
-.student-content-back-bottom-right-class-label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.192);
-  pointer-events: none;
-  transition: 0.25s ease;
-}
-.student-content-back-bottom-right-year {
-  position: relative;
-}
-.student-content-back-bottom-right-year-input {
-  border: 1px solid rgba(255, 255, 255, 0.192);
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  padding: 0 5%;
-  background: none;
-  transition: 0.25s ease;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-.student-content-back-bottom-right-year-input:focus {
-  border-color: white;
-}
-.student-content-back-bottom-right-year-label {
+.student-content-back-bottom-right-infor-label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -508,28 +481,8 @@ body {
   background-color: #26335D;
 }
 
-.student-content-back-bottom-right-date-input:not(:placeholder-shown) + .student-content-back-bottom-right-date-label,
-.student-content-back-bottom-right-date-input:focus + .student-content-back-bottom-right-date-label {
-  color: white;
-  top: 0;
-  font-size: 8px;
-  display: inline-block;
-  padding: 0 5px;
-  background-color: #26335D;
-}
-
-.student-content-back-bottom-right-class-input:not(:placeholder-shown) + .student-content-back-bottom-right-class-label,
-.student-content-back-bottom-right-class-input:focus + .student-content-back-bottom-right-class-label {
-  color: white;
-  top: 0;
-  font-size: 8px;
-  display: inline-block;
-  padding: 0 5px;
-  background-color: #26335D;
-}
-
-.student-content-back-bottom-right-year-input:not(:placeholder-shown) + .student-content-back-bottom-right-year-label,
-.student-content-back-bottom-right-year-input:focus + .student-content-back-bottom-right-year-label {
+.student-content-back-bottom-right-infor-input:not(:placeholder-shown) + .student-content-back-bottom-right-infor-label,
+.student-content-back-bottom-right-infor-input:focus + .student-content-back-bottom-right-infor-label {
   color: white;
   top: 0;
   font-size: 8px;
