@@ -239,6 +239,157 @@ body {
   text-align: justify;
 }
 
+.history {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.course {
+  padding-top: 100px;
+  background-color: #26335D;
+}
+.course-heading {
+  color: white;
+  font-size: 68px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
+.course-line {
+  content: "";
+  width: 30%;
+  height: 14px;
+  background-color: #E74040;
+  margin: 20px auto;
+}
+.course-background {
+  width: 50%;
+}
+.course-container {
+  width: 60%;
+  height: 30vw;
+  margin: 50px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 30px;
+}
+.course-container-head {
+  width: 100%;
+  height: 65%;
+  display: flex;
+}
+.course-container-head-img {
+  height: 100%;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.course-container-head-img-pic {
+  height: 100%;
+}
+.course-container-head-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.course-container-head-center-table {
+  width: 100%;
+  padding: 5px 25px;
+  display: grid;
+  grid-template-columns: 25% 35% 60%;
+  row-gap: 5px;
+}
+.course-container-point {
+  width: 100%;
+  height: 35%;
+  display: flex;
+}
+.course-container-point-text {
+  width: 40%;
+  height: 100%;
+  padding-top: 10px;
+}
+.course-container-point-table {
+  width: 60%;
+  height: 100;
+  padding: 10px;
+}
+
+.course-container-head-center h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #26335D;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.course-container-head-center p {
+  padding: 5px 25px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #26335D;
+  text-align: justify;
+}
+
+.course-container-head-center-table h3 {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.course-container-head-center-table h4 {
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.course-container-point-text h1 {
+  width: 100%;
+  color: #26335D;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.course-container-point-text h4 {
+  width: 100%;
+  color: #26335D;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.course-container-point-table table {
+  width: 100%;
+  height: 100%;
+  border: #737373 solid 1px;
+  border-spacing: 0;
+}
+
+.course-container-point-table th,
+.course-container-point-table td {
+  color: #26335D;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  margin: auto 0;
+  border: #26335D solid 1px;
+}
+
+.course-container-point-table th {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.course-container-point-table td {
+  font-size: 20px;
+}
+
 #student-section {
   padding-top: 100px;
 }
@@ -284,6 +435,7 @@ body {
   position: absolute;
   top: calc((100% - 500px) / 2);
   left: calc((100% - 600px) / 2);
+  border-radius: 20px;
 }
 .student-content-back-top {
   display: flex;
@@ -349,12 +501,14 @@ body {
   display: none;
 }
 .student-content-back-bottom-left-img__thumb {
+  content: "No image";
   width: 100%;
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.192);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .student-content-back-bottom-left-msv {
@@ -456,6 +610,21 @@ body {
   color: rgba(255, 255, 255, 0.192);
   pointer-events: none;
   transition: 0.25s ease;
+}
+.student-content-back-save {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #26335D;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border: none;
+  margin-top: 5px;
+  top: calc((100% - 500px) / 2 + 400px);
+  left: calc((100% - 150px) / 2);
 }
 .student-footer-img {
   width: 100%;
