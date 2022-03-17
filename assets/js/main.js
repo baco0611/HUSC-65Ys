@@ -83,8 +83,8 @@ btnDownload.addEventListener('click', function() {
         let canvasImage = document.querySelector('canvas');
         btnDownload.href = canvasImage.toDataURL();
         btnDownload.download = 'husc-student.png';
+	document.body.removeChild(canvas);
     }); 
-    document.body.removeChild(canvas);
 });
 
 // Show course information
