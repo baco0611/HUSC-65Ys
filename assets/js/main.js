@@ -1,3 +1,4 @@
+// Smooth scroll page
 const scroll = new SmoothScroll('.header-container a[href*="#"]', {
 	speed: 500
 });
@@ -6,6 +7,8 @@ const scroll_1 = new SmoothScroll('.content-container a[href*="#"]', {
 	speed: 500
 });
 
+
+// Upload profile image
 document.querySelectorAll(".student-content-back-bottom-left-img__input").forEach(inputElement => {
     const dropZoneElement = inputElement.closest(".student-content-back-bottom-left-img");
 
@@ -70,7 +73,21 @@ function updateThumbnail(dropZoneElement, file) {
     }
 }
 
-// course
+// Download image
+let btnDownload = document.querySelector('#btnDownload');
+
+btnDownload.addEventListener('click', function() {
+    const imageDownload = document.querySelector('#image')
+    html2canvas(imageDownload).then(function(canvas) {
+        document.body.appendChild(canvas);
+        let canvasImage = document.querySelector('canvas');
+        btnDownload.href = canvasImage.toDataURL();
+        btnDownload.download = 'husc-student.png';
+    }); 
+    document.body.removeChild(canvas);
+});
+
+// Show course information
 const courseBtn1 = document.querySelector('.js-course-click1');
 const course1 = document.querySelector('.js-course1');
 

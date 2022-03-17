@@ -617,6 +617,8 @@ body {
   font-size: 14px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 35px;
   color: white;
   border: none;
   margin-top: 5px;
