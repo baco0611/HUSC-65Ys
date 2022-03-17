@@ -41,6 +41,7 @@
         transform: rotate(15deg);
         border-radius: 75px;
         z-index: 3;
+        box-shadow: 45px 35px $sub-primary-color;
         &-img{
             width: 65%;
             margin: auto auto;
