@@ -242,13 +242,98 @@ body {
 }
 
 .history {
-  padding: 100px 0;
-  background-color: white;
+  padding: 100px 75px;
+  background: url(/assets/img/History/background.png), white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.history-heading {
+  color: black;
+  font-size: 68px;
+  font-weight: 800;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.history-line {
+  content: "";
+  width: 30%;
+  height: 14px;
+  background-color: #E74040;
+  margin: 20px auto;
+  margin-bottom: 60px;
+}
+.history-top h1 {
+  display: none;
+  font-size: 42px;
+  font-weight: 700;
+  color: #E74040;
+  padding: 30px;
+  text-shadow: 3px 3px #FBB52F;
+  text-align: center;
+}
+.history-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.history-main-content {
+  width: 100%;
+  min-height: 100px;
+  padding-top: 30px;
+  color: black;
+  position: relative;
+}
+.history-main-content-point {
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #E74040;
+}
+.history-main-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 2px 2px #FBB52F;
+}
+.history-main-content p {
+  padding: 15px 0;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.history-main-heading {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 40px;
+}
+.history-main-heading h1 {
+  text-align: center;
+  color: #E74040;
+  text-shadow: 5px 5px #FBB52F;
+  font-size: 60px;
+}
+.history-padding-left {
+  padding-left: 45px;
+  border-left: #E74040 solid 2px;
+  text-align: left;
+}
+.history-padding-right {
+  padding-right: 45px;
+  border-right: #E74040 solid 2px;
+  text-align: right;
+}
+.history-left {
+  top: 30px;
+  left: -6.75px;
+}
+.history-right {
+  top: 30px;
+  right: -6.75px;
 }
 
 .course {
   padding: 100px 0;
-  background: #26335D;
+  background: url(/assets/img/Course/course-Background.png), #26335D;
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -642,7 +727,7 @@ body {
 }
 .course-container-head {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -669,24 +754,6 @@ body {
   display: grid;
   grid-template-columns: 25% 35% 60%;
   row-gap: 5px;
-}
-.course-container-bottom {
-  padding: 10px;
-  position: relative;
-}
-.course-container-bottom-btn {
-  position: absolute;
-  padding: 5px;
-  background-color: #E74040;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-  font-size: 12px;
-  right: 0;
-  top: 50%;
-}
-.course-container-bottom-btn:hover {
-  opacity: 0.8;
 }
 
 .course-container-head-center h1 {

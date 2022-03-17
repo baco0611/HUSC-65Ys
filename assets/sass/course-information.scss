@@ -21,7 +21,7 @@
         animation: modalFadeIn ease 0.5s;
         &-head{
             width: 100%;
-            height: 90%;
+            height: 100%;
             display: flex;
             align-items: center;
             &-img{
@@ -46,24 +46,6 @@
                     display: grid;
                     grid-template-columns: 25% 35% 60%;
                     row-gap: 5px;
-                }
-            }
-        }
-        &-bottom{
-            padding: 10px;
-            position: relative;
-            &-btn{
-                position: absolute;
-                padding: 5px;
-                background-color: $sub-primary-color;
-                border-radius: 10px;
-                color: white;
-                font-weight: 700;
-                font-size: 12px;
-                right: 0; 
-                top: 50%;
-                &:hover{
-                    opacity: 0.8;
                 }
             }
         }

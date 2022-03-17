@@ -1,5 +1,88 @@
 .history{
-    padding: 100px 0;
-    background-color: white;
-    
+    padding: 100px 75px;
+    background: url(/assets/img/History/background.png), white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-heading{
+        color: black;
+        font-size: 68px;
+        font-weight: 800;
+        margin-top: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-line{
+        content: "";
+        width: 30%;
+        height: 14px;
+        background-color: $sub-primary-color;
+        margin: 20px auto;
+        margin-bottom: 60px;
+    }
+    &-top h1{
+        display: none;
+        font-size: 42px;
+        font-weight: 700;
+        color: $sub-primary-color;
+        padding: 30px;
+        text-shadow: 3px 3px $third-primary-color;
+        text-align: center;
+    }
+    &-main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        &-content{
+            width: 100%;
+            min-height: 100px;
+            padding-top: 30px;
+            color: black;
+            position: relative;
+            &-point{
+                position: absolute;
+                content: " ";
+                @include size(10px);
+                border-radius: 100%;
+                background-color: $sub-primary-color;
+            }
+            & h3{
+                font-size: 28px;
+                font-weight: 700;
+                text-shadow: 2px 2px $third-primary-color;
+            }
+            & p{
+                padding: 15px 0;
+                font-size: 20px;
+                line-height: 1.6;
+            }
+        }
+        &-heading{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 40px;
+            & h1{
+                text-align: center;
+                color: $sub-primary-color;
+                text-shadow: 5px 5px $third-primary-color;
+                font-size: 60px;
+            }
+        }
+    }
+    &-padding-left{
+        padding-left: 45px;
+        border-left: $sub-primary-color solid 2px;
+        text-align: left;
+    }
+    &-padding-right{
+        padding-right: 45px;
+        border-right: $sub-primary-color solid 2px;
+        text-align: right;
+    }
+    &-left{
+        top: 30px;
+        left: -6.75px;
+    }
+    &-right{
+        top: 30px;
+        right: -6.75px;
+    }
 }
