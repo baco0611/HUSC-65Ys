@@ -1,7 +1,7 @@
 .content{
     position: absolute;
     top: 175px;
-    left: 175px;
+    left: 5%;
     &-heading{
         width: 545px;
         color: #FF7B52;
@@ -10,7 +10,7 @@
     }
     &-sub-heading{
         color: $primary-color;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 400;
         margin: 45px 0;
         text-transform: uppercase;
@@ -24,13 +24,16 @@
         text-transform: uppercase;
         display: flex;
         justify-content: space-between;
+        &:hover{
+            opacity: 0.85;
+        }
     }
 }
 
 .logo{
     position: absolute;
     top: 150px;
-    right: 500px;
+    right: 40%;
     &-front{
         position: absolute;
         top: 0;
@@ -46,15 +49,6 @@
             width: 65%;
             margin: auto auto;
         }
-    }
-    &-back{
-        position: absolute;
-        top: 35px;
-        left: 35px;
-        @include size(400px); 
-        border-radius: 75px;
-        background-color: $sub-primary-color;
-        transform: rotate(15deg);
     }
     &-back1{
         position: absolute;

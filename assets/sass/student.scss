@@ -231,6 +231,9 @@
                 margin-top: 5px;
                 top: calc((100% - 500px)/2 + 400px);
                 left: calc((100% - 150px)/2);
+                &:hover{
+                    opacity: 0.85;
+                }
             }
         }
     }

@@ -41,7 +41,7 @@ body {
   line-height: 1;
   color: white;
   font-family: "Montserrat", sans-serif;
-  max-width: 1920px;
+  min-width: 740px;
 }
 
 .home {
@@ -95,6 +95,9 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+.header-container-btn:hover {
+  opacity: 0.85;
+}
 
 .menu {
   list-style: none;
@@ -109,15 +112,114 @@ body {
   line-height: 24px;
   font-weight: 700;
 }
+.menu-btn {
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin-right: 30px;
+}
+.menu-btn div {
+  width: 100%;
+  height: 100%;
+}
+.menu-btn div i {
+  margin: 0 auto;
+  line-height: 100%;
+  color: white;
+  font-size: 35px;
+}
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.3s;
+}
+.menu-mobile {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  list-style: none;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+.menu-mobile-check:checked ~ .menu-overlay {
+  display: block;
+}
+.menu-mobile-check:checked ~ .menu-mobile {
+  transform: translateX(0);
+  opacity: 1;
+}
+.menu-mobile-header {
+  width: 100%;
+  height: 75px;
+  padding: 5px 20px;
+  margin-top: 5px;
+  border-bottom: 2px #E74040 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-mobile-header-logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu-mobile-header-logo-img {
+  height: 70%;
+}
+.menu-mobile-header-logo-heading {
+  color: #26335D;
+}
+.menu-mobile-header-logo-sub {
+  color: #26335D;
+}
+.menu-mobile-item {
+  margin-top: 20px;
+}
+.menu-mobile-item-link {
+  text-decoration: none;
+  color: #26335D;
+  font-weight: 500;
+  display: block;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+}
+
+.ti-close {
+  width: 100%;
+  height: 100%;
+  color: #26335D;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
 
 .menu > li:hover > a {
   color: #E74040;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .content {
   position: absolute;
   top: 175px;
-  left: 175px;
+  left: 5%;
 }
 .content-heading {
   width: 545px;
@@ -127,7 +229,7 @@ body {
 }
 .content-sub-heading {
   color: #26335D;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   margin: 45px 0;
   text-transform: uppercase;
@@ -142,11 +244,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.content-btn:hover {
+  opacity: 0.85;
+}
 
 .logo {
   position: absolute;
   top: 150px;
-  right: 500px;
+  right: 40%;
 }
 .logo-front {
   position: absolute;
@@ -164,16 +269,6 @@ body {
 .logo-front-img {
   width: 65%;
   margin: auto auto;
-}
-.logo-back {
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  width: 400px;
-  height: 400px;
-  border-radius: 75px;
-  background-color: #E74040;
-  transform: rotate(15deg);
 }
 .logo-back1 {
   position: absolute;
@@ -625,6 +720,9 @@ body {
   top: calc((100% - 500px) / 2 + 400px);
   left: calc((100% - 150px) / 2);
 }
+.student-content-back-save:hover {
+  opacity: 0.85;
+}
 .student-footer-img {
   width: 100%;
 }
@@ -793,6 +891,11 @@ body {
   display: flex;
 }
 
+#dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+#antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1 {
+  font-size: 28px;
+}
+
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -801,6 +904,702 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* Tablet & Mobile */
+@media only screen and (max-width: 64em) {
+  .menu {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .header-container-btn {
+    display: none;
+  }
+  .header-container-logo {
+    padding-left: 30px;
+  }
+
+  .logo-back1, .logo-back2, .logo-back3 {
+    display: none;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 49.9375em) {
+  .header {
+    height: 75px;
+  }
+
+  .home-back {
+    transform: translateY(-50px);
+  }
+
+  .content {
+    top: 120px;
+    left: 6%;
+  }
+  .content-heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .content-sub-heading {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .content-btn {
+    width: 110px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .content-btn i {
+    font-size: 12px;
+  }
+
+  .logo {
+    right: 40%;
+    top: 125px;
+  }
+  .logo-front {
+    width: 225px;
+    height: 225px;
+    box-shadow: 35px 25px #E74040;
+    border-radius: 40px;
+  }
+
+  .information {
+    gap: 0 10px;
+    padding: 0 15px;
+    margin-top: 45px;
+  }
+  .information-line {
+    margin: 10px 0;
+  }
+  .information-box {
+    min-height: 350px;
+    padding: 20px 30px;
+  }
+
+  .history {
+    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+    padding: 75px;
+  }
+  .history-heading {
+    font-size: 48px;
+  }
+  .history-line {
+    margin-bottom: 10px;
+  }
+  .history-top h1 {
+    display: block;
+  }
+  .history-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .history-main-content {
+    padding-top: 15px;
+  }
+  .history-main-content h3 {
+    font-size: 28px;
+  }
+  .history-main-content p {
+    font-size: 18px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .course {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .course-heading {
+    font-size: 50px;
+  }
+  .course-main {
+    grid-template-columns: calc((100% - 90px) / 4) calc((100% - 90px) / 4) calc((100% - 90px) / 4) calc((100% - 90px) / 4);
+    margin: 30px auto;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .course-main-btn {
+    height: 50px;
+  }
+  .course-main-btn a {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .course-container {
+    width: 90%;
+    height: 305px;
+  }
+  .course-container-head-center h1 {
+    font-size: 32px;
+  }
+  .course-container-head-center p {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .course-container-head-center-table h3 {
+    font-size: 14px;
+  }
+  .course-container-head-center-table h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+#antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1 {
+    font-size: 28px;
+  }
+
+  .student-heading {
+    font-size: 60px;
+  }
+
+  .student-sub-heading {
+    font-size: 30px;
+  }
+
+  .student-content-text {
+    font-size: 55px;
+  }
+
+  .csvc-left {
+    width: 50%;
+  }
+  .csvc-left-line {
+    height: 5px;
+    width: 100%;
+  }
+  .csvc-left-heading {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 30px;
+  }
+  .csvcright {
+    width: 50%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+  .home-back {
+    transform: translateY(-50px);
+  }
+
+  .content {
+    top: 135px;
+    left: 8%;
+  }
+  .content-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .content-sub-heading {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .logo {
+    right: 40%;
+    top: 125px;
+  }
+  .logo-front {
+    width: 275px;
+    height: 275px;
+    box-shadow: 35px 25px #E74040;
+  }
+
+  .information {
+    gap: 0 10px;
+    padding: 0 30px;
+    margin-top: 45px;
+  }
+  .information-line {
+    margin: 10px 0;
+  }
+  .information-box {
+    min-height: 340px;
+  }
+
+  .history {
+    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+  }
+  .history-heading {
+    font-size: 52px;
+  }
+
+  .course-heading {
+    font-size: 54px;
+  }
+  .course-main {
+    grid-template-columns: calc((100% - 120px) / 5) calc((100% - 150px) / 5) calc((100% - 120px) / 5) calc((100% - 120px) / 5) calc((100% - 120px) / 5);
+    margin: 20px auto;
+  }
+  .course-main-btn a {
+    font-size: 12px;
+  }
+  .course-container {
+    width: 85%;
+    height: 32vw;
+  }
+
+  .student-content-text {
+    font-size: 60px;
+  }
+
+  .csvc-left {
+    width: 40%;
+  }
+  .csvc-left-line {
+    height: 10px;
+    width: 100%;
+  }
+  .csvc-left-heading {
+    font-size: 58px;
+    line-height: 60px;
+    padding-top: 30px;
+  }
+  .csvcright {
+    width: 40%;
+  }
+}
+/* Small desktops and laptops */
+@media only screen and (max-width: 71.875em) and (min-width: 64.0625em) {
+  .header-container-logo {
+    padding-left: 50px;
+  }
+
+  .content {
+    top: 130px;
+  }
+  .content-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .logo {
+    right: 35%;
+    top: 125px;
+  }
+  .logo-front {
+    width: 300px;
+    height: 300px;
+    box-shadow: 35px 25px #E74040;
+  }
+  .logo-back1, .logo-back2, .logo-back3 {
+    display: none;
+  }
+
+  .information {
+    gap: 0 10px;
+    padding: 0 30px;
+    margin-top: 45px;
+  }
+  .information-line {
+    margin: 10px 0;
+  }
+  .information-box {
+    min-height: 340px;
+  }
+
+  .history {
+    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+  }
+
+  .course-container {
+    width: 70%;
+    height: 25vw;
+  }
+
+  .student-content-text {
+    font-size: 60px;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 100em) and (max-width: 124.9375em) {
+  .header {
+    height: 125px;
+  }
+  .header-container-logo-img {
+    height: 80px;
+    padding-right: 10px;
+  }
+  .header-container-logo-heading {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .header-container-logo-sub {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .header-container-btn {
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-size: 22px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+  .menu-item-link {
+    font-size: 20px;
+  }
+
+  .content {
+    top: 250px;
+    left: 10%;
+  }
+  .content-heading {
+    width: 800px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .content-sub-heading {
+    font-size: 35px;
+    margin: 40px 0;
+  }
+  .content-btn {
+    width: 200px;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .logo {
+    right: 35%;
+    top: 225px;
+  }
+  .logo-front {
+    width: 425px;
+    height: 425px;
+    box-shadow: 35px 25px #E74040;
+  }
+  .logo-back1 {
+    top: 400px;
+    left: -625px;
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+  }
+  .logo-back2 {
+    top: 300px;
+    left: -375px;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+  .logo-back3 {
+    top: 0px;
+    left: -150px;
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+  }
+
+  .information {
+    gap: 0 50px;
+    margin-top: 0px;
+  }
+  .information-line {
+    margin: 10px 0;
+  }
+  .information-box {
+    min-height: 400px;
+  }
+  .information-box-img {
+    height: 85px;
+  }
+  .information-box-heading {
+    font-size: 28px;
+  }
+  .information-box-line {
+    height: 5px;
+  }
+  .information-box-text {
+    font-size: 24px;
+  }
+
+  .history-heading {
+    font-size: 78px;
+  }
+  .history-main-content {
+    padding-top: 50px;
+  }
+  .history-main-content h3 {
+    font-size: 38px;
+  }
+  .history-main-content p {
+    font-size: 30px;
+  }
+
+  .history-main-heading h1 {
+    font-size: 85px;
+  }
+
+  .course-heading {
+    font-size: 78px;
+  }
+  .course-main {
+    grid-template-columns: calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6);
+    margin: 50px auto;
+    column-gap: 75px;
+    row-gap: 50px;
+  }
+  .course-main-btn {
+    height: 75px;
+  }
+  .course-main-btn a {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .course-container {
+    height: 25vw;
+  }
+  .course-container-head-center h1 {
+    font-size: 50px;
+  }
+  .course-container-head-center p {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .course-container-head-center-table h3 {
+    font-size: 24px;
+  }
+  .course-container-head-center-table h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+#antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1 {
+    font-size: 42px;
+  }
+
+  .student-heading {
+    font-size: 92px;
+  }
+
+  .student-sub-heading {
+    font-size: 50px;
+  }
+
+  .student-content-text {
+    font-size: 80px;
+  }
+
+  .csvc-left-heading {
+    font-size: 100px;
+    line-height: 110px;
+    padding-top: 100px;
+  }
+}
+/* 4K screens ----------- */
+@media only screen and (min-width: 125em) {
+  .home-back {
+    transform: translateY(-95px);
+  }
+
+  .header {
+    height: 125px;
+  }
+  .header-container-logo-img {
+    height: 80px;
+    padding-right: 10px;
+  }
+  .header-container-logo-heading {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .header-container-logo-sub {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .header-container-btn {
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-size: 22px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+  .menu-item-link {
+    font-size: 22px;
+  }
+
+  .content {
+    top: 300px;
+    left: 5%;
+  }
+  .content-heading {
+    width: 1000px;
+    font-size: 100px;
+    line-height: 105px;
+  }
+  .content-sub-heading {
+    font-size: 45px;
+    margin: 50px 0;
+  }
+  .content-btn {
+    width: 275px;
+    padding: 30px 35px;
+    font-size: 28px;
+  }
+
+  .logo {
+    right: 30%;
+    top: 275px;
+  }
+  .logo-front {
+    width: 520px;
+    height: 520px;
+    box-shadow: 35px 25px #E74040;
+  }
+  .logo-back1 {
+    top: 450px;
+    left: -900px;
+    width: 150px;
+    height: 150px;
+    border-radius: 35px;
+  }
+  .logo-back2 {
+    top: 400px;
+    left: -650px;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+  .logo-back3 {
+    top: 100px;
+    left: -300px;
+    width: 150px;
+    height: 150px;
+    border-radius: 35px;
+  }
+
+  .information {
+    gap: 0 50px;
+    margin-top: -50px;
+  }
+  .information-line {
+    margin: 10px 0;
+  }
+  .information-box {
+    min-height: 450px;
+  }
+  .information-box-img {
+    height: 100px;
+  }
+  .information-box-heading {
+    font-size: 40px;
+  }
+  .information-box-line {
+    height: 5px;
+  }
+  .information-box-text {
+    font-size: 30px;
+  }
+
+  .history-heading {
+    font-size: 100px;
+  }
+  .history-main-content {
+    padding-top: 75px;
+  }
+  .history-main-content h3 {
+    font-size: 50px;
+  }
+  .history-main-content p {
+    font-size: 35px;
+  }
+  .history-main-content-point {
+    width: 20px;
+    height: 20px;
+  }
+  .history-padding-left {
+    padding-left: 60px;
+    border-left: #E74040 solid 3px;
+  }
+  .history-padding-right {
+    padding-right: 60px;
+    border-right: #E74040 solid 3px;
+  }
+  .history-left {
+    top: 75px;
+    left: -12.5px;
+  }
+  .history-right {
+    top: 75px;
+    right: -12.5px;
+  }
+
+  .history-main-heading h1 {
+    font-size: 150px;
+  }
+
+  .course-heading {
+    font-size: 100px;
+  }
+  .course-main {
+    grid-template-columns: calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6) calc((100% - 375px) / 6);
+    margin: 75px auto;
+    column-gap: 75px;
+    row-gap: 50px;
+    padding: 0 100px;
+  }
+  .course-main-btn {
+    height: 100px;
+  }
+  .course-main-btn a {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .course-container {
+    height: 25vw;
+  }
+  .course-container-head-center h1 {
+    font-size: 75px;
+  }
+  .course-container-head-center p {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .course-container-head-center-table {
+    padding-top: 20px;
+  }
+  .course-container-head-center-table h3 {
+    font-size: 24px;
+  }
+  .course-container-head-center-table h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+#antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1 {
+    font-size: 42px;
+  }
+
+  .student-heading {
+    font-size: 100px;
+  }
+
+  .student-sub-heading {
+    font-size: 65px;
+  }
+
+  .student-content-text {
+    font-size: 85px;
+  }
+
+  .csvc-left-heading {
+    font-size: 125px;
+    line-height: 155px;
+    padding-top: 100px;
   }
 }
 

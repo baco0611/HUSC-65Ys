@@ -1,0 +1,733 @@
+/* Tablet & Mobile */
+@media only screen and (max-width : 64em) {
+    .menu{
+        &-btn{
+            display: block;
+        }
+        display: none;
+    }
+    .header{
+        &-container{
+            &-btn{
+                display: none;
+            }
+            &-logo{
+                padding-left: 30px;
+            }
+        }
+    }
+    .logo{
+        &-back1, &-back2, &-back3{
+            display: none;
+        }
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width : 49.9375em) {
+    // Home
+    .header{
+        height: 75px;
+    }
+    .home-back{
+        transform: translateY(-50px);
+    }
+    .content{
+        top: 120px;
+        left: 6%;
+        &-heading{
+            font-size: 35px;
+            line-height: 40px;
+        }
+        &-sub-heading{
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        &-btn{
+            width: 110px;
+            padding: 10px 10px;
+            font-size: 12px;
+            & i{
+                font-size: 12px;
+            }
+        }
+    }
+    .logo{
+        right: 40%;
+        top: 125px;
+        &-front{
+            @include size(225px);
+            box-shadow: 35px 25px $sub-primary-color;
+            border-radius: 40px;
+        }
+    }
+    .information{
+        gap: 0 10px;
+        padding: 0 15px;
+        margin-top: 45px;
+        &-line{
+            margin: 10px 0;
+        }
+        &-box{
+            min-height: 350px;
+            padding: 20px 30px;
+        }
+    }
+    .history{
+        background: url(/assets/img/History/background-tablet.png), white no-repeat;
+        padding: 75px;
+        &-heading{
+            font-size: 48px;
+        }
+        &-line{
+            margin-bottom: 10px;
+        }
+        &-top h1{
+            display: block;
+        }
+        &-main{
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+            &-content
+            {
+                padding-top: 15px;
+                & h3{
+                    font-size: 28px;
+                }
+                & p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .none{
+        display: none;
+    }
+    // Course
+    .course{
+        &-heading{
+            font-size: 50px;
+        }
+        padding-top: 50px;
+        padding-bottom: 0;
+        &-main{
+            grid-template-columns: calc((100% - 90px)/4) calc((100% - 90px)/4) calc((100% - 90px)/4) calc((100% - 90px)/4);
+            margin: 30px auto;
+            column-gap: 30px;
+            row-gap: 30px;
+            &-btn 
+            {
+                height: 50px;
+                & a{
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+            }
+        }
+        &-container{
+            width: 90%;
+            height: 305px;
+            &-head{
+                &-center{
+                    & h1{
+                        font-size: 32px;
+                    }
+                    & p{
+                        padding-top: 10px;
+                        font-size: 12px;
+                    }
+                    &-table{
+                        & h3{
+                            font-size: 14px;
+                        }
+                        & h4{
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+    #antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1
+    {
+        font-size: 28px;
+    }
+
+    // Student
+    .student-heading{
+        font-size: 60px;
+    }
+    .student-sub-heading{
+        font-size: 30px;
+    }
+    .student-content-text{
+        font-size: 55px;
+    }
+    // CSVC
+    .csvc{
+        &-left{
+            width: 50%;
+            &-line{
+                height: 5px;
+                width: 100%;
+            }
+            &-heading{
+                font-size: 50px;
+                line-height: 60px;
+                padding-top: 30px;
+            }
+        }
+        &right{
+            width: 50%;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width : 50em) and (max-width : 64em) {
+    // Home
+    .home-back{
+        transform: translateY(-50px);
+    }
+    .content{
+        top: 135px;
+        left: 8%;
+        &-heading{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &-sub-heading{
+            font-size: 15px;
+            margin: 20px 0;
+            
+        }
+    }
+    .logo{
+        right: 40%;
+        top: 125px;
+        &-front{
+            @include size(275px);
+            box-shadow: 35px 25px $sub-primary-color;
+        }
+    }
+    .information{
+        gap: 0 10px;
+        padding: 0 30px;
+        margin-top: 45px;
+        &-line{
+            margin: 10px 0;
+        }
+        &-box{
+            min-height: 340px;
+        }
+    }
+
+    // History
+    .history{
+        background: url(/assets/img/History/background-tablet.png), white no-repeat;
+        &-heading{
+            font-size: 52px;
+        }
+    }
+
+    // Course
+    .course{
+        &-heading{
+            font-size: 54px;
+        }
+        &-main{
+            grid-template-columns: calc((100% - 120px)/5) calc((100% - 150px)/5) calc((100% - 120px)/5) calc((100% - 120px)/5) calc((100% - 120px)/5);
+            margin: 20px auto;
+            &-btn a{
+                font-size: 12px;
+            }
+        }
+        &-container{
+            width: 85%;
+            height: 32vw;
+        }
+    }
+    // Student
+    .student-content-text{
+        font-size: 60px;
+    }
+
+    // CSVC
+    .csvc{
+        &-left{
+            width: 40%;
+            &-line{
+                height: 10px;
+                width: 100%;
+            }
+            &-heading{
+                font-size: 58px;
+                line-height: 60px;
+                padding-top: 30px;
+            }
+        }
+        &right{
+            width: 40%;
+        }
+    }
+}
+
+/* Small desktops and laptops */
+@media only screen and (max-width: 71.875em) and (min-width : 64.0625em) {
+    // Home
+    .header-container-logo{
+        padding-left: 50px;
+    }
+    .content{
+        top: 130px;
+        &-heading{
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+    .logo{
+        right: 35%;
+        top: 125px;
+        &-front{
+            @include size(300px);
+            box-shadow: 35px 25px $sub-primary-color;
+        }
+        &-back1, &-back2, &-back3{
+            display: none;
+        }
+    }
+    .information{
+        gap: 0 10px;
+        padding: 0 30px;
+        margin-top: 45px;
+        &-line{
+            margin: 10px 0;
+        }
+        &-box{
+            min-height: 340px;
+        }
+    }
+
+    // History
+    .history{
+        background: url(/assets/img/History/background-tablet.png), white no-repeat;
+    }
+
+    // Course
+    .course-container{
+        width: 70%;
+        height: 25vw;
+    }
+
+    // Student
+    .student-content-text{
+        font-size: 60px;
+    }
+}
+    
+/* Large screens ----------- */
+@media only screen  and (min-width : 100em) and (max-width: 124.9375em)  {
+    .header{
+        height: 125px;
+        &-container{
+            &-logo{
+                &-img{
+                    height: 80px;
+                    padding-right: 10px;
+                }
+                &-heading{
+                    font-size: 40px;
+                    line-height: 42px;
+                }
+                &-sub{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            &-btn{
+                padding: 20px 35px;
+                border-radius: 15px;
+                font-size: 22px;
+            }
+        }
+    }
+    .menu{
+        gap: 40px;
+        &-item-link{
+            font-size: 20px;
+        }
+    }
+    .content{
+        top: 250px;
+        left: 10%;
+        &-heading{
+            width: 800px;
+            font-size: 80px;
+            line-height: 80px;
+        }
+        &-sub-heading{
+            font-size: 35px;
+            margin: 40px 0;
+        }
+        &-btn{
+            width: 200px;
+            padding: 20px 30px;
+            font-size: 20px;
+        }
+    }
+    .logo{
+        right: 35%;
+        top: 225px;
+        &-front{
+            @include size(425px);
+            box-shadow: 35px 25px $sub-primary-color;
+        }
+        &-back1{
+            top: 400px;
+            left: -625px;
+            @include size(125px);
+            border-radius: 25px;
+        }
+        &-back2{
+            top: 300px;
+            left: -375px;
+            @include size(70px);
+            border-radius: 20px;
+            
+        }
+        &-back3{
+            top: 0px;
+            left: -150px;
+            @include size(125px);
+            border-radius: 25px;
+        } 
+    }
+    .information{
+        gap: 0 50px;
+        margin-top: 0px;
+        &-line{
+            margin: 10px 0;
+        }
+        &-box{
+            min-height: 400px;
+            &-img{
+                height: 85px;
+            }
+            &-heading{
+                font-size: 28px;
+            }
+            &-line{
+                height: 5px;
+            }
+            &-text{
+                font-size: 24px;
+            }
+        }
+    }
+
+    // History
+    .history{
+        &-heading{
+            font-size: 78px;
+        }
+        &-main{
+            &-content
+            {
+                padding-top: 50px;
+                & h3{
+                    font-size: 38px;
+                }
+                & p{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .history-main-heading h1{
+        font-size: 85px;
+    }
+
+    // Course
+    .course{
+        &-heading{
+            font-size: 78px;
+        }
+        &-main{
+            grid-template-columns: calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6);
+            margin: 50px auto;
+            column-gap: 75px;
+            row-gap: 50px;
+            &-btn 
+            {
+                height: 75px;
+                & a{
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &-container{
+            height: 25vw;
+            &-head{
+                &-center{
+                    & h1{
+                        font-size: 50px;
+                    }
+                    & p{
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+                    &-table{
+                        & h3{
+                            font-size: 24px;
+                        }
+                        & h4{
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+    #antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1
+    {
+        font-size: 42px;
+    }
+
+    // Student
+    .student-heading{
+        font-size: 92px;
+    }
+    .student-sub-heading{
+        font-size: 50px;
+    }
+    .student-content-text{
+        font-size: 80px;
+    }
+    
+    // CSVC
+    .csvc-left-heading{
+        font-size: 100px;
+        line-height: 110px;
+        padding-top: 100px;
+    }
+}
+
+/* 4K screens ----------- */
+@media only screen  and (min-width : 125em){
+    // Home
+    .home-back{
+        transform: translateY(-95px);
+    }
+    .header{
+        height: 125px;
+        &-container{
+            &-logo{
+                &-img{
+                    height: 80px;
+                    padding-right: 10px;
+                }
+                &-heading{
+                    font-size: 40px;
+                    line-height: 42px;
+                }
+                &-sub{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            &-btn{
+                padding: 20px 35px;
+                border-radius: 15px;
+                font-size: 22px;
+            }
+        }
+    }
+    .menu{
+        gap: 40px;
+        &-item-link{
+            font-size: 22px;
+        }
+    }
+    .content{
+        top: 300px;
+        left: 5%;
+        &-heading{
+            width: 1000px;
+            font-size: 100px;
+            line-height: 105px;
+        }
+        &-sub-heading{
+            font-size: 45px;
+            margin: 50px 0;
+        }
+        &-btn{
+            width: 275px;
+            padding: 30px 35px;
+            font-size: 28px;
+        }
+    }
+    .logo{
+        right: 30%;
+        top: 275px;
+        &-front{
+            @include size(520px);
+            box-shadow: 35px 25px $sub-primary-color;
+        }
+        &-back1{
+            top: 450px;
+            left: -900px;
+            @include size(150px);
+            border-radius: 35px;
+        }
+        &-back2{
+            top: 400px;
+            left: -650px;
+            @include size(70px);
+            border-radius: 20px;
+            
+        }
+        &-back3{
+            top: 100px;
+            left: -300px;
+            @include size(150px);
+            border-radius: 35px;
+        } 
+    }
+    .information{
+        gap: 0 50px;
+        margin-top: -50px;
+        &-line{
+            margin: 10px 0;
+        }
+        &-box{
+            min-height: 450px;
+            &-img{
+                height: 100px;
+            }
+            &-heading{
+                font-size: 40px;
+            }
+            &-line{
+                height: 5px;
+            }
+            &-text{
+                font-size: 30px;
+            }
+        }
+    }
+    // History
+    .history{
+        &-heading{
+            font-size: 100px;
+        }
+        &-main{
+            &-content
+            {
+                padding-top: 75px;
+                & h3{
+                    font-size: 50px;
+                }
+                & p{
+                    font-size: 35px;
+                }
+                &-point{
+                    @include size(20px);
+                }
+            }
+        }
+        &-padding-left{
+            padding-left: 60px;
+            border-left: $sub-primary-color solid 3px;
+        }
+        &-padding-right{
+            padding-right: 60px;
+            border-right: $sub-primary-color solid 3px;
+        }
+        &-left{
+            top: 75px;
+            left: -12.5px;
+        }
+        &-right{
+            top: 75px;
+            right: -12.5px;
+        }
+    }
+    .history-main-heading h1{
+        font-size: 150px;
+    }
+
+    // Course
+    .course{
+        &-heading{
+            font-size: 100px;
+        }
+        &-main{
+            grid-template-columns: calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6) calc((100% - 375px)/6);
+            margin: 75px auto;
+            column-gap: 75px;
+            row-gap: 50px;
+            padding: 0 100px;
+            &-btn 
+            {
+                height: 100px;
+                & a{
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &-container{
+            height: 25vw;
+            &-head{
+                &-center{
+                    & h1{
+                        font-size: 75px;
+                    }
+                    & p{
+                        padding-top: 20px;
+                        font-size: 18px;
+                    }
+                    &-table{
+                        padding-top: 20px;
+                        & h3{
+                            font-size: 24px;
+                        }
+                        & h4{
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    #dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+    #antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1
+    {
+        font-size: 42px;
+    }
+
+    // Student
+    .student-heading{
+        font-size: 100px;
+    }
+    .student-sub-heading{
+        font-size: 65px;
+    }
+    .student-content-text{
+        font-size: 85px;
+    }
+
+    // CSVC
+    .csvc-left-heading{
+        font-size: 125px;
+        line-height: 155px;
+        padding-top: 100px;
+    }
+}

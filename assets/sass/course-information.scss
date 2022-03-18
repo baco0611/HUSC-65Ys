@@ -87,6 +87,12 @@
     display: flex;
 }
 
+#dientuvienthong h1, #kythuathoa h1, #tracdiabando h1,
+#antoansuckhoe h1, #quanlytainguyen h1, #phantichdulieu h1
+{
+    font-size: 28px;
+}
+
 @keyframes modalFadeIn{
     from{
         opacity: 0;
