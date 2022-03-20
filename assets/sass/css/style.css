@@ -338,7 +338,7 @@ body {
 
 .history {
   padding: 100px 75px;
-  background: url(/assets/img/History/background.png), white;
+  background: url(../img/background.png), white;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -428,7 +428,7 @@ body {
 
 .course {
   padding: 100px 0;
-  background: url(/assets/img/Course/course-Background.png), #26335D;
+  background: url(../img/course-Background.png), #26335D;
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -982,7 +982,7 @@ body {
   }
 
   .history {
-    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+    background: url(../img/background-tablet.png), white no-repeat;
     padding: 75px;
   }
   .history-heading {
@@ -1127,7 +1127,7 @@ body {
   }
 
   .history {
-    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+    background: url(../img/background-tablet.png), white no-repeat;
   }
   .history-heading {
     font-size: 52px;
@@ -1208,7 +1208,7 @@ body {
   }
 
   .history {
-    background: url(/assets/img/History/background-tablet.png), white no-repeat;
+    background: url(../img/background-tablet.png), white no-repeat;
   }
 
   .course-container {
