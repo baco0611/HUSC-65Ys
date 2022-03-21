@@ -74,9 +74,8 @@ function updateThumbnail(dropZoneElement, file) {
 }
 
 // Download image
-let btnDownload = document.querySelector('#btnDownload');
 
-btnDownload.addEventListener('click', function() {
+function saveImg() {
     const imageDownload = document.querySelector('#image')
     html2canvas(imageDownload).then(function(canvas) {
         document.body.appendChild(canvas);
@@ -85,7 +84,7 @@ btnDownload.addEventListener('click', function() {
         btnDownload.download = 'husc-student.png';
 	document.body.removeChild(canvas);
     }); 
-});
+};
 
 // Show course information
 const courseBtn1 = document.querySelector('.js-course-click1');
